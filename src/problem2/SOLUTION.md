@@ -186,12 +186,4 @@ This section elaborates on the reasoning behind choosing specific AWS services, 
 | **Amazon CloudWatch** | Native AWS logging and monitoring tool that integrates well with EKS, Lambda, and networking. Provides metrics, alarms, and log insights in one platform. | Prometheus (requires manual setup in AWS), Datadog (external, costlier for high-volume logs) |
 | **Amazon SNS / SQS** | SNS handles pub/sub notifications (e.g., trade confirmations), while SQS ensures asynchronous processing of messages between services. Highly reliable and scalable. | EventBridge (more rule-driven, less decoupling), Step Functions (orchestration-focused) |
 
-Each service was selected based on production-grade trade-offs between scalability, performance, ecosystem fit, cost, and maintenance complexity. These choices collectively support a high-performance, resilient, and secure trading system.
-
-
-
-
-
-
-
-
+Each service was selected based on production-grade trade-offs between scalability, performance, ecosystem fit, cost, and maintenance complexity. These choices collectively support a high-performance, resilient, and secure trading system
