@@ -1,7 +1,9 @@
 # Provide your CLI command here:
 
 ## Objective
+
 From a file `./transaction-log.txt`, identify orders selling `TSLA` and submit an HTTP GET request to `https://example.com/api/:order_id`. Save all responses into `./output.txt`
+
 ---
 
 ## Solution: Using `jq` + `xargs` + `curl`
